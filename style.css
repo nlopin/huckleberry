@@ -1,12 +1,78 @@
+:root {
+    --green: hsl(160, 100%, 30%);
+    --gold-lighter: hsl(45, 100%, 50%);
+    --gold-darker: hsl(45, 100%, 40%);
+    --black: hsl(0, 0%, 0%);
+    --grey-very-dark: hsl(0, 0%, 10%);
+    --grey-dark: hsl(0, 0%, 30%);
+    --grey-medium: hsl(0, 0%, 40%);
+    --grey-light: hsl(0, 0%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: var(--grey-very-dark);
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-/* Add styles here! */
+header {
+    font-size: 1.25rem;
+    padding: 64px 0 32px;
+    font-weight: 400;
+}
+
+main {
+    padding: 64px 0;
+    border-top: 8px solid var(--grey-medium);
+    background-color: var(--grey-light);
+    line-height: 1.4;
+}
+
+.max-width-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-chunk {
+    padding: 0 32px;
+    max-width: 400px;
+}
+
+.card {
+    padding: 8px 32px;
+    background-color: var(--white);
+    border-bottom: 8px solid var(--grey-medium);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.indented-heading {
+    background-color: var(--gold-lighter);
+    border-bottom: 8px solid var(--gold-darker);
+}
+
+h2 {
+    font-weight: 900;
+    margin: 0;
+    margin-left: -48px;
+    padding: 16px 32px 16px 48px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+strong {
+    font-weight: 700;
+    color: var(--green);
+}
